@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VIOLET Unisex Beauty Care &amp; Bridal Makeup Studio | Mavelikara, Kerala</title>
+<meta name="description" content="VIOLET Unisex Beauty Care &amp; Bridal Makeup Studio in Mavelikara, Kerala. Bridal makeup, hair smoothening, keratin, hair botox, colouring, saree draping and skin care. Rated 4.7 from 1,370 Google reviews. Open daily 9:30 AM – 8 PM.">
+<meta property="og:title" content="VIOLET Unisex Beauty Care &amp; Bridal Makeup Studio">
+<meta property="og:description" content="Bridal makeup and unisex beauty care in Mavelikara, Kerala. 4.7★ from 1,370 reviews.">
+<meta property="og:image" content="images/p4.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --plum:#3A1B33;
+    --plum-deep:#2A1226;
+    --violet:#7C3F6D;
+    --violet-soft:#A96B98;
+    --gold:#C6A15B;
+    --gold-light:#E3C98F;
+    --cream:#FBF6F1;
+    --cream-2:#F4EBE3;
+    --ink:#2B2028;
+    --muted:#6E5F68;
+    --line:rgba(58,27,51,.14);
+    --shadow:0 18px 50px -22px rgba(58,27,51,.35);
+    --radius:2px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Jost',system-ui,-apple-system,sans-serif;
+    background:var(--cream);color:var(--ink);
+    font-weight:300;line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  img{display:block;max-width:100%}
+  a{color:inherit;text-decoration:none}
+  h1,h2,h3,h4{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;line-height:1.12;letter-spacing:-.01em}
+  .wrap{width:min(1180px,92vw);margin-inline:auto}
+  .eyebrow{
+    font-size:.7rem;letter-spacing:.28em;text-transform:uppercase;
+    font-weight:500;color:var(--violet);display:flex;align-items:center;gap:.8rem;
+  }
+  .eyebrow::before{content:"";width:34px;height:1px;background:var(--gold);display:block}
+  .eyebrow.center{justify-content:center}
+  .eyebrow.center::after{content:"";width:34px;height:1px;background:var(--gold);display:block}
+
+  /* ---------- NAV ---------- */
+  header{
+    position:fixed;inset:0 0 auto 0;z-index:100;
+    transition:background .35s ease,box-shadow .35s ease,padding .35s ease;
+    padding:1.35rem 0;
+  }
+  header.scrolled{
+    background:rgba(251,246,241,.94);
+    backdrop-filter:blur(14px);
+    box-shadow:0 1px 0 var(--line);
+    padding:.7rem 0;
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:2rem}
+  .brand{display:flex;flex-direction:column;line-height:1}
+  .brand .mark{
+    font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:600;
+    letter-spacing:.34em;color:#fff;transition:color .35s;
+  }
+  .brand .sub{
+    font-size:.53rem;letter-spacing:.24em;text-transform:uppercase;
+    color:rgba(255,255,255,.72);margin-top:.45rem;transition:color .35s;
+  }
+  header.scrolled .brand .mark{color:var(--plum)}
+  header.scrolled .brand .sub{color:var(--muted)}
+  .nav-links{display:flex;align-items:center;gap:2.1rem}
+  .nav-links a{
+    font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;
+    color:rgba(255,255,255,.88);font-weight:400;position:relative;padding-bottom:3px;
+    transition:color .3s;
+  }
+  .nav-links a::after{
+    content:"";position:absolute;left:0;bottom:0;width:0;height:1px;
+    background:var(--gold);transition:width .3s ease;
+  }
+  .nav-links a:hover::after{width:100%}
+  header.scrolled .nav-links a{color:var(--ink)}
+  .nav-cta{
+    border:1px solid rgba(255,255,255,.5);padding:.62rem 1.35rem;
+    font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;
+    color:#fff;transition:all .3s;white-space:nowrap;
+  }
+  .nav-cta:hover{background:var(--gold);border-color:var(--gold);color:var(--plum-deep)}
+  header.scrolled .nav-cta{border-color:var(--plum);color:var(--plum)}
+  header.scrolled .nav-cta:hover{background:var(--plum);color:var(--cream)}
+  .burger{display:none;background:none;border:0;cursor:pointer;padding:.4rem;z-index:110}
+  .burger span{display:block;width:24px;height:1.5px;background:#fff;margin:5px 0;transition:.3s}
+  header.scrolled .burger span{background:var(--plum)}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;min-height:100svh;display:flex;align-items:center;
+    padding:9rem 0 5rem;overflow:hidden;
+    background:var(--plum-deep);
+  }
+  .hero-bg{position:absolute;inset:0;z-index:0}
+  .hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 40%}
+  .hero-bg::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(105deg,rgba(42,18,38,.94) 0%,rgba(42,18,38,.82) 42%,rgba(58,27,51,.45) 72%,rgba(58,27,51,.3) 100%);
+  }
+  .hero-inner{position:relative;z-index:2;max-width:720px}
+  .hero .eyebrow{color:var(--gold-light)}
+  .hero .eyebrow::before{background:var(--gold-light)}
+  .hero h1{
+    font-size:clamp(2.9rem,6.4vw,5.1rem);color:#fff;margin:1.5rem 0 0;
+    font-weight:400;letter-spacing:-.02em;
+  }
+  .hero h1 em{font-style:italic;color:var(--gold-light)}
+  .hero p.lede{
+    color:rgba(255,255,255,.82);font-size:clamp(1rem,1.5vw,1.14rem);
+    max-width:52ch;margin-top:1.6rem;font-weight:300;line-height:1.8;
+  }
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2.4rem}
+  .btn{
+    display:inline-flex;align-items:center;gap:.6rem;
+    padding:1rem 2rem;font-size:.76rem;letter-spacing:.16em;
+    text-transform:uppercase;font-weight:500;transition:all .3s ease;
+    border:1px solid transparent;cursor:pointer;
+  }
+  .btn-gold{background:var(--gold);color:var(--plum-deep)}
+  .btn-gold:hover{background:var(--gold-light);transform:translateY(-2px)}
+  .btn-ghost{border-color:rgba(255,255,255,.45);color:#fff}
+  .btn-ghost:hover{background:rgba(255,255,255,.12);border-color:#fff}
+  .hero-meta{
+    display:flex;flex-wrap:wrap;gap:2.4rem;margin-top:3.4rem;
+    padding-top:2rem;border-top:1px solid rgba(255,255,255,.18);
+  }
+  .hero-meta div{color:#fff}
+  .hero-meta .num{
+    font-family:'Cormorant Garamond',serif;font-size:1.9rem;
+    color:var(--gold-light);line-height:1;display:block;
+  }
+  .hero-meta .lbl{
+    font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;
+    color:rgba(255,255,255,.6);margin-top:.5rem;display:block;
+  }
+  .stars{color:var(--gold-light);letter-spacing:.12em;font-size:.85rem}
+
+  /* ---------- MARQUEE STRIP ---------- */
+  .strip{background:var(--plum-deep);color:rgba(255,255,255,.72);padding:1.05rem 0;overflow:hidden}
+  .strip-track{display:flex;gap:3.5rem;white-space:nowrap;animation:slide 34s linear infinite;width:max-content}
+  .strip-track span{
+    font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;
+    display:flex;align-items:center;gap:3.5rem;
+  }
+  .strip-track span::after{content:"◆";color:var(--gold);font-size:.5rem}
+  @keyframes slide{to{transform:translateX(-50%)}}
+
+  /* ---------- SECTION SHELL ---------- */
+  section{padding:7rem 0}
+  .sec-head{max-width:640px;margin-bottom:3.6rem}
+  .sec-head h2{font-size:clamp(2.1rem,4vw,3.2rem);margin-top:1.1rem;color:var(--plum)}
+  .sec-head p{color:var(--muted);margin-top:1.1rem;font-size:1.02rem}
+  .sec-head.center{margin-inline:auto;text-align:center}
+
+  /* ---------- ABOUT ---------- */
+  .about{background:var(--cream)}
+  .about-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:5rem;align-items:center}
+  .about-media{position:relative}
+  .about-media img{width:100%;height:560px;object-fit:cover;box-shadow:var(--shadow)}
+  .about-media::before{
+    content:"";position:absolute;inset:-18px -18px auto auto;width:62%;height:62%;
+    border:1px solid var(--gold);z-index:-1;
+  }
+  .about-badge{
+    position:absolute;bottom:-26px;left:-26px;background:var(--plum);color:#fff;
+    padding:1.5rem 1.8rem;text-align:center;box-shadow:var(--shadow);
+  }
+  .about-badge .n{font-family:'Cormorant Garamond',serif;font-size:2.2rem;color:var(--gold-light);line-height:1}
+  .about-badge .t{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.7);margin-top:.4rem}
+  .about-copy h2{font-size:clamp(2rem,3.6vw,2.9rem);color:var(--plum);margin-top:1.1rem}
+  .about-copy p{color:var(--muted);margin-top:1.3rem}
+  .about-copy p strong{color:var(--ink);font-weight:500}
+  .pillars{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem;margin-top:2.4rem}
+  .pillar{border-top:1px solid var(--line);padding-top:1.1rem}
+  .pillar h4{font-size:1.12rem;color:var(--plum);font-family:'Jost',sans-serif;font-weight:500;letter-spacing:.01em}
+  .pillar p{font-size:.88rem;margin-top:.4rem;color:var(--muted);line-height:1.65}
+
+  /* ---------- SERVICES ---------- */
+  .services{background:var(--cream-2)}
+  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+  .svc{
+    background:var(--cream);padding:2.4rem 2rem;border:1px solid transparent;
+    transition:all .4s ease;position:relative;overflow:hidden;
+  }
+  .svc::before{
+    content:"";position:absolute;left:0;top:0;width:100%;height:2px;
+    background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .45s ease;
+  }
+  .svc:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:var(--line)}
+  .svc:hover::before{transform:scaleX(1)}
+  .svc .ico{
+    width:44px;height:44px;display:grid;place-items:center;
+    border:1px solid var(--gold);color:var(--violet);margin-bottom:1.4rem;
+  }
+  .svc .ico svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.4}
+  .svc h3{font-size:1.42rem;color:var(--plum);margin-bottom:.6rem}
+  .svc p{font-size:.9rem;color:var(--muted);line-height:1.7}
+  .svc ul{list-style:none;margin-top:1.1rem;display:flex;flex-wrap:wrap;gap:.4rem}
+  .svc li{
+    font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--violet);background:rgba(124,63,109,.08);padding:.3rem .65rem;
+  }
+  .svc-note{
+    margin-top:2.6rem;text-align:center;font-size:.9rem;color:var(--muted);
+  }
+  .svc-note a{color:var(--violet);border-bottom:1px solid var(--gold);padding-bottom:1px}
+
+  /* ---------- GALLERY ---------- */
+  .gallery{background:var(--plum-deep);color:#fff}
+  .gallery .eyebrow{color:var(--gold-light)}
+  .gallery .eyebrow::before,.gallery .eyebrow.center::after{background:var(--gold-light)}
+  .gallery .sec-head h2{color:#fff}
+  .gallery .sec-head p{color:rgba(255,255,255,.6)}
+  .gal-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:230px;gap:1rem}
+  .gal-item{position:relative;overflow:hidden;background:#1d0d1a}
+  .gal-item img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.3,1),opacity .5s}
+  .gal-item:hover img{transform:scale(1.06)}
+  .gal-item figcaption{
+    position:absolute;inset:auto 0 0 0;padding:1.6rem 1.2rem .9rem;
+    background:linear-gradient(transparent,rgba(20,8,18,.88));
+    font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
+    color:rgba(255,255,255,.9);opacity:0;transform:translateY(8px);transition:.4s;
+  }
+  .gal-item:hover figcaption{opacity:1;transform:none}
+  .gal-item.tall{grid-row:span 2}
+  .gal-item.wide{grid-column:span 2}
+
+  /* ---------- VISIT / HOURS + MAP ---------- */
+  .visit{background:var(--cream)}
+  .visit-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:4rem;align-items:stretch}
+  .visit-card{background:var(--cream-2);padding:3rem 2.6rem;border:1px solid var(--line)}
+  .visit-card h2{font-size:clamp(1.9rem,3.2vw,2.6rem);color:var(--plum);margin-top:1rem}
+  .info-block{margin-top:2.2rem;padding-top:1.6rem;border-top:1px solid var(--line)}
+  .info-block:first-of-type{border-top:0;padding-top:0}
+  .info-label{
+    font-size:.64rem;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--violet);margin-bottom:.55rem;font-weight:500;
+  }
+  .info-block p,.info-block a{font-size:.98rem;color:var(--ink);line-height:1.7}
+  .info-block a:hover{color:var(--violet)}
+  .hours{list-style:none;margin-top:.2rem}
+  .hours li{
+    display:flex;justify-content:space-between;gap:1rem;
+    font-size:.92rem;padding:.42rem 0;border-bottom:1px dashed rgba(58,27,51,.1);
+  }
+  .hours li:last-child{border-bottom:0}
+  .hours li span:first-child{color:var(--muted)}
+  .hours li span:last-child{font-weight:400;color:var(--ink)}
+  .open-now{
+    display:inline-flex;align-items:center;gap:.5rem;margin-top:1rem;
+    font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:#2f6b45;
+  }
+  .open-now::before{content:"";width:7px;height:7px;border-radius:50%;background:#3f9c63;box-shadow:0 0 0 3px rgba(63,156,99,.18)}
+  .map-shell{position:relative;min-height:520px;border:1px solid var(--line);overflow:hidden;background:var(--cream-2)}
+  .map-shell iframe{width:100%;height:100%;min-height:520px;border:0;display:block;filter:grayscale(.18) contrast(1.02)}
+  .map-cta{
+    position:absolute;left:1.2rem;bottom:1.2rem;background:var(--plum);color:#fff;
+    padding:.85rem 1.4rem;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;
+    display:inline-flex;align-items:center;gap:.6rem;transition:.3s;box-shadow:var(--shadow);
+  }
+  .map-cta:hover{background:var(--violet)}
+
+  /* ---------- CONTACT ---------- */
+  .contact{background:var(--plum);color:#fff;position:relative;overflow:hidden}
+  .contact::before{
+    content:"";position:absolute;right:-140px;top:-140px;width:520px;height:520px;
+    border:1px solid rgba(198,161,91,.22);border-radius:50%;
+  }
+  .contact::after{
+    content:"";position:absolute;right:-40px;top:-40px;width:320px;height:320px;
+    border:1px solid rgba(198,161,91,.16);border-radius:50%;
+  }
+  .contact-inner{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+  .contact .eyebrow{color:var(--gold-light)}
+  .contact .eyebrow::before{background:var(--gold-light)}
+  .contact h2{font-size:clamp(2.1rem,4vw,3.3rem);color:#fff;margin-top:1.1rem}
+  .contact p.lede{color:rgba(255,255,255,.72);margin-top:1.2rem;max-width:44ch}
+  .contact-actions{display:flex;flex-direction:column;gap:1rem}
+  .c-action{
+    display:flex;align-items:center;gap:1.2rem;padding:1.35rem 1.6rem;
+    border:1px solid rgba(255,255,255,.18);transition:.35s;background:rgba(255,255,255,.03);
+  }
+  .c-action:hover{background:rgba(255,255,255,.09);border-color:var(--gold);transform:translateX(5px)}
+  .c-action .ci{
+    width:40px;height:40px;flex:0 0 40px;display:grid;place-items:center;
+    border:1px solid rgba(198,161,91,.5);color:var(--gold-light);
+  }
+  .c-action .ci svg{width:17px;height:17px;stroke:currentColor;fill:none;stroke-width:1.5}
+  .c-action .ct{display:flex;flex-direction:column}
+  .c-action .ct small{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5)}
+  .c-action .ct strong{font-weight:400;font-size:1rem;color:#fff;margin-top:.15rem;letter-spacing:.01em}
+
+  /* ---------- FOOTER ---------- */
+  footer{background:var(--plum-deep);color:rgba(255,255,255,.55);padding:4rem 0 2rem}
+  .foot-top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:3rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,.1)}
+  .foot-brand .mark{font-family:'Cormorant Garamond',serif;font-size:1.5rem;letter-spacing:.3em;color:#fff}
+  .foot-brand p{font-size:.88rem;margin-top:1rem;max-width:34ch;line-height:1.75}
+  .foot-col h5{
+    font-size:.64rem;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--gold-light);margin-bottom:1.1rem;font-weight:500;
+  }
+  .foot-col a,.foot-col p{display:block;font-size:.88rem;margin-bottom:.6rem;transition:color .3s}
+  .foot-col a:hover{color:#fff}
+  .foot-bottom{
+    display:flex;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;
+    padding-top:1.8rem;font-size:.76rem;letter-spacing:.04em;
+  }
+  .foot-bottom a:hover{color:var(--gold-light)}
+
+  /* ---------- REVEAL ---------- */
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.3,1)}
+  .reveal.in{opacity:1;transform:none}
+
+  /* ---------- RESPONSIVE ---------- */
+  @media(max-width:1024px){
+    .about-grid,.visit-grid,.contact-inner{grid-template-columns:1fr;gap:3rem}
+    .about-media img{height:420px}
+    .svc-grid{grid-template-columns:1fr 1fr}
+    .gal-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:200px}
+    .foot-top{grid-template-columns:1fr 1fr}
+    .map-shell,.map-shell iframe{min-height:400px}
+  }
+  @media(max-width:820px){
+    .nav-links{
+      position:fixed;inset:0;background:var(--plum-deep);
+      flex-direction:column;justify-content:center;gap:2rem;
+      transform:translateX(100%);transition:transform .4s ease;
+    }
+    .nav-links.open{transform:none}
+    .nav-links a{color:#fff;font-size:1rem;letter-spacing:.2em}
+    .nav-cta{display:none}
+    .burger{display:block}
+    header.scrolled .burger span{background:var(--plum)}
+    .burger.open span{background:#fff!important}
+    .burger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+    .burger.open span:nth-child(2){opacity:0}
+    .burger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+    section{padding:5rem 0}
+    .hero{min-height:auto;padding:8rem 0 4.5rem}
+    .hero-meta{gap:1.8rem}
+    .about-badge{left:0;bottom:-20px;padding:1.1rem 1.3rem}
+    .pillars{grid-template-columns:1fr}
+  }
+  @media(max-width:600px){
+    .svc-grid{grid-template-columns:1fr}
+    .gal-grid{grid-template-columns:1fr;grid-auto-rows:240px}
+    .gal-item.tall,.gal-item.wide{grid-row:span 1;grid-column:span 1}
+    .visit-card{padding:2.2rem 1.5rem}
+    .foot-top{grid-template-columns:1fr;gap:2.2rem}
+    .hero-actions .btn{width:100%;justify-content:center}
+    .about-media::before{display:none}
+  }
+  @media(prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important}
+    .reveal{opacity:1;transform:none}
+  }
+</style>
+</head>
+<body>
+
+<header id="header">
+  <div class="wrap nav">
+    <a href="#top" class="brand" aria-label="VIOLET home">
+      <span class="mark">VIOLET</span>
+      <span class="sub">Unisex Beauty Care &amp; Bridal Studio</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#visit">Visit</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="tel:+919847485975" class="nav-cta">Book · 98474 85975</a>
+    <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-bg">
+    <img src="images/p4.jpg" alt="Styling stations inside VIOLET Unisex Beauty Care &amp; Bridal Makeup Studio, Mavelikara">
+  </div>
+  <div class="wrap hero-inner">
+    <p class="eyebrow">Mavelikara, Kerala · Since the neighbourhood fell in love with us</p>
+    <h1>Bridal artistry &amp; beauty care, <em>done properly.</em></h1>
+    <p class="lede">
+      A unisex salon and bridal makeup studio in Old Mavelikara — where a 4.7-star
+      reputation built on 1,370 reviews meets careful, unhurried craft. Hair, skin,
+      bridal and grooming, all under one roof.
+    </p>
+    <div class="hero-actions">
+      <a href="tel:+919847485975" class="btn btn-gold">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+        Call to book
+      </a>
+      <a href="#services" class="btn btn-ghost">Explore services</a>
+    </div>
+    <div class="hero-meta">
+      <div>
+        <span class="num">4.7<span class="stars"> ★</span></span>
+        <span class="lbl">1,370 Google reviews</span>
+      </div>
+      <div>
+        <span class="num">9:30–8</span>
+        <span class="lbl">Open daily</span>
+      </div>
+      <div>
+        <span class="num">Unisex</span>
+        <span class="lbl">Women-owned · LGBTQ+ friendly</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="strip" aria-hidden="true">
+  <div class="strip-track">
+    <span>Bridal Makeup</span><span>Hair Smoothening</span><span>Keratin &amp; Botox</span><span>Saree Draping</span><span>Hair Colouring</span><span>Threading</span><span>Dandruff &amp; Hair-Fall Spa</span><span>Grooming</span>
+    <span>Bridal Makeup</span><span>Hair Smoothening</span><span>Keratin &amp; Botox</span><span>Saree Draping</span><span>Hair Colouring</span><span>Threading</span><span>Dandruff &amp; Hair-Fall Spa</span><span>Grooming</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-media reveal">
+      <img src="images/p1.jpg" alt="Interior of VIOLET salon with styling stations and makeup vanity" loading="lazy">
+      <div class="about-badge">
+        <div class="n">4.7★</div>
+        <div class="t">1,370 reviews</div>
+      </div>
+    </div>
+    <div class="about-copy reveal">
+      <p class="eyebrow">The studio</p>
+      <h2>A neighbourhood salon with a bridal heart.</h2>
+      <p>
+        VIOLET sits at <strong>Michel Junction on the Krishnapuram–Mavelikkara Road</strong>,
+        in Old Mavelikkara. It is a unisex beauty care centre and bridal makeup studio —
+        the kind of place where a bride's trial run matters as much as a Tuesday
+        afternoon haircut.
+      </p>
+      <p>
+        Guests keep coming back for the same reasons the reviews mention again and
+        again: a calm, well-kept space, staff who take their time, and pricing that
+        stays reasonable for the quality on offer. The studio is women-owned and
+        explicitly LGBTQ+ friendly — everyone is welcome in the chair.
+      </p>
+      <div class="pillars">
+        <div class="pillar">
+          <h4>Bridal specialists</h4>
+          <p>Engagement and wedding makeup, saree draping and long-wear finishes, planned around your day.</p>
+        </div>
+        <div class="pillar">
+          <h4>Hair, properly treated</h4>
+          <p>Smoothening, keratin, hair botox, colouring and anti-dandruff therapies — not one-size-fits-all.</p>
+        </div>
+        <div class="pillar">
+          <h4>Unisex &amp; welcoming</h4>
+          <p>Haircuts and grooming for men alongside full beauty care for women, in one comfortable space.</p>
+        </div>
+        <div class="pillar">
+          <h4>Hygiene first</h4>
+          <p>Guests repeatedly note the cleanliness of the studio and the care taken with tools and products.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <p class="eyebrow center">What we do</p>
+      <h2>Services built around real requests.</h2>
+      <p>Every treatment below is drawn from what guests actually book and review us for. Call the studio for current pricing and to reserve a slot.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.2 5.6L20 10l-4.4 3.6L17 20l-5-3.2L7 20l1.4-6.4L4 10l5.8-1.4L12 3z"/></svg></div>
+        <h3>Bridal &amp; Party Makeup</h3>
+        <p>Engagement, wedding and reception looks with long-lasting finishes, built to survive a full day of photographs and celebration.</p>
+        <ul><li>Bridal</li><li>Engagement</li><li>Long-wear</li></ul>
+      </article>
+      <article class="svc reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20c0-4 3-6 8-6s8 2 8 6"/><circle cx="12" cy="7" r="4"/></svg></div>
+        <h3>Hair Smoothening &amp; Keratin</h3>
+        <p>Smoothening, keratin and hair botox treatments for frizz control, shine and manageability — matched to your hair type.</p>
+        <ul><li>Smoothening</li><li>Keratin</li><li>Hair botox</li></ul>
+      </article>
+      <article class="svc reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h18M6 8c2 0 3 1.5 3 4s-1 4-3 4M18 8c-2 0-3 1.5-3 4s1 4 3 4"/></svg></div>
+        <h3>Hair Colour &amp; Styling</h3>
+        <p>Global colour, highlights and grey coverage, plus cuts and blow-dry styling for women and men.</p>
+        <ul><li>Colouring</li><li>Haircuts</li><li>Styling</li></ul>
+      </article>
+      <article class="svc reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10z"/></svg></div>
+        <h3>Scalp &amp; Hair-Fall Care</h3>
+        <p>Anti-dandruff and anti-hair-fall spa therapies with a proper head massage — one of the most praised parts of a visit.</p>
+        <ul><li>Dandruff spa</li><li>Protein spa</li><li>Hair fall</li></ul>
+      </article>
+      <article class="svc reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg></div>
+        <h3>Threading &amp; Grooming</h3>
+        <p>Eyebrow shaping, threading and everyday grooming for men and women, done quickly and precisely.</p>
+        <ul><li>Threading</li><li>Eyebrows</li><li>Grooming</li></ul>
+      </article>
+      <article class="svc reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M5 7l14 10M19 7L5 17"/></svg></div>
+        <h3>Saree Draping &amp; Finishing</h3>
+        <p>Pre-pleated and on-the-day saree draping to complete a bridal or festive look, coordinated with your makeup.</p>
+        <ul><li>Saree draping</li><li>Festive</li><li>Bridal</li></ul>
+      </article>
+    </div>
+    <p class="svc-note reveal">
+      Prices vary by hair length, product and treatment — call
+      <a href="tel:+919847485975">+91 98474 85975</a> for a quote or to book a bridal consultation.
+    </p>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <p class="eyebrow center">Inside the studio</p>
+      <h2>The space, the work, the finish.</h2>
+      <p>Photographs from the studio's own Google Business profile.</p>
+    </div>
+    <div class="gal-grid">
+      <figure class="gal-item wide reveal">
+        <img src="images/p1.jpg" alt="Wide view of the VIOLET salon floor with styling stations" loading="lazy">
+        <figcaption>The salon floor</figcaption>
+      </figure>
+      <figure class="gal-item tall reveal">
+        <img src="images/p3.jpg" alt="Sleek, glossy straightened hair after a smoothening treatment" loading="lazy">
+        <figcaption>Smoothening result</figcaption>
+      </figure>
+      <figure class="gal-item reveal">
+        <img src="images/p2.jpg" alt="Reception desk and children's play area at VIOLET" loading="lazy">
+        <figcaption>Reception &amp; kids' corner</figcaption>
+      </figure>
+      <figure class="gal-item reveal">
+        <img src="images/p4.jpg" alt="Styling chairs and mirrors at VIOLET beauty studio" loading="lazy">
+        <figcaption>Styling stations</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- VISIT -->
+<section class="visit" id="visit">
+  <div class="wrap visit-grid">
+    <div class="visit-card reveal">
+      <p class="eyebrow">Plan your visit</p>
+      <h2>Hours &amp; location</h2>
+
+      <div class="info-block">
+        <div class="info-label">Opening hours</div>
+        <ul class="hours">
+          <li><span>Monday</span><span>9:30 AM – 8:00 PM</span></li>
+          <li><span>Tuesday</span><span>9:30 AM – 8:00 PM</span></li>
+          <li><span>Wednesday</span><span>9:30 AM – 8:00 PM</span></li>
+          <li><span>Thursday</span><span>9:30 AM – 8:00 PM</span></li>
+          <li><span>Friday</span><span>9:30 AM – 8:00 PM</span></li>
+          <li><span>Saturday</span><span>9:30 AM – 8:00 PM</span></li>
+          <li><span>Sunday</span><span>9:30 AM – 8:00 PM</span></li>
+        </ul>
+        <span class="open-now" id="openNow">Open daily, 9:30 AM – 8:00 PM</span>
+      </div>
+
+      <div class="info-block">
+        <div class="info-label">Address</div>
+        <p>
+          Michel Junction, Krishnapuram – Mavelikkara Rd,<br>
+          Old Mavelikkara, Mavelikara,<br>
+          Keralam 690101, India
+        </p>
+        <p style="margin-top:.6rem;font-size:.82rem;color:var(--muted)">Plus code: 7G2R+53 Mavelikara</p>
+      </div>
+
+      <div class="info-block">
+        <div class="info-label">Phone</div>
+        <p><a href="tel:+919847485975">+91 98474 85975</a></p>
+      </div>
+
+      <div class="info-block">
+        <div class="info-label">Follow</div>
+        <p><a href="https://www.instagram.com/violet_beauty_care/" target="_blank" rel="noopener">@violet_beauty_care on Instagram</a></p>
+      </div>
+    </div>
+
+    <div class="map-shell reveal">
+      <iframe
+        title="Map showing VIOLET Unisex Beauty Care &amp; Bridal Makeup Studio, Mavelikara"
+        src="https://maps.google.com/maps?q=9.2503967,76.5401897&z=16&hl=en&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen></iframe>
+      <a class="map-cta" href="https://www.google.com/maps/dir/?api=1&destination=9.2503967,76.5401897" target="_blank" rel="noopener">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 11l19-8-8 19-2-9-9-2z"/></svg>
+        Get directions
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap contact-inner">
+    <div class="reveal">
+      <p class="eyebrow">Get in touch</p>
+      <h2>Book your chair.</h2>
+      <p class="lede">
+        Bridal dates fill up early — especially through wedding season. Call the studio
+        to check availability, ask about pricing, or arrange a trial.
+      </p>
+    </div>
+    <div class="contact-actions reveal">
+      <a class="c-action" href="tel:+919847485975">
+        <span class="ci"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg></span>
+        <span class="ct"><small>Call the studio</small><strong>+91 98474 85975</strong></span>
+      </a>
+      <a class="c-action" href="https://www.google.com/maps/dir/?api=1&destination=9.2503967,76.5401897" target="_blank" rel="noopener">
+        <span class="ci"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l19-8-8 19-2-9-9-2z"/></svg></span>
+        <span class="ct"><small>Directions</small><strong>Michel Junction, Mavelikara</strong></span>
+      </a>
+      <a class="c-action" href="https://www.instagram.com/violet_beauty_care/" target="_blank" rel="noopener">
+        <span class="ci"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></span>
+        <span class="ct"><small>See our work</small><strong>@violet_beauty_care</strong></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <div class="mark">VIOLET</div>
+        <p>Unisex Beauty Care &amp; Bridal Makeup Studio — Michel Junction, Old Mavelikkara, Kerala 690101.</p>
+      </div>
+      <div class="foot-col">
+        <h5>Explore</h5>
+        <a href="#about">About the studio</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#visit">Hours &amp; location</a>
+      </div>
+      <div class="foot-col">
+        <h5>Contact</h5>
+        <a href="tel:+919847485975">+91 98474 85975</a>
+        <a href="https://www.instagram.com/violet_beauty_care/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=9.2503967,76.5401897" target="_blank" rel="noopener">Get directions</a>
+        <p>Open daily · 9:30 AM – 8:00 PM</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="yr">2026</span> VIOLET Unisex Beauty Care &amp; Bridal Makeup Studio. All rights reserved.</span>
+      <span>Women-owned · LGBTQ+ friendly</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Header scroll state
+  var header = document.getElementById('header');
+  function onScroll(){
+    if (window.scrollY > 40) header.classList.add('scrolled');
+    else header.classList.remove('scrolled');
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  // Mobile menu
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('navLinks');
+  burger.addEventListener('click', function(){
+    var open = navLinks.classList.toggle('open');
+    burger.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  navLinks.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      navLinks.classList.remove('open');
+      burger.classList.remove('open');
+      burger.setAttribute('aria-expanded','false');
+      document.body.style.overflow = '';
+    });
+  });
+
+  // Scroll reveal
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, {threshold:0.12, rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el, i){
+    el.style.transitionDelay = (i % 3) * 0.08 + 's';
+    io.observe(el);
+  });
+
+  // Year
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // Open-now indicator (studio hours 9:30–20:00 daily, IST)
+  (function(){
+    var el = document.getElementById('openNow');
+    if (!el) return;
+    try {
+      var now = new Date();
+      var ist = new Date(now.getTime() + (now.getTimezoneOffset() * 60000) + (5.5 * 3600000));
+      var mins = ist.getHours() * 60 + ist.getMinutes();
+      var open = mins >= 570 && mins < 1200;
+      el.textContent = open ? 'Open now · closes 8:00 PM' : 'Closed now · opens 9:30 AM';
+      el.style.color = open ? '#2f6b45' : '#8a5a2b';
+    } catch(e){}
+  })();
+</script>
+</body>
+</html>
